@@ -1,12 +1,5 @@
-.wrap .box {
-  background: salmon;
-}
-.wrap .box:nth-child(1) {
-  background: red;
-}
-@media (max-width: 1118px) {
-  .wrap .box {
-    font-family: "Noto Sans KR";
-    font-size: 20px;
-  }
+.wrap main {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(1fr, 365px));
+  grid-template-rows: repeat(3, minmax(1fr, 250px));
 }/*# sourceMappingURL=layout.css.map */

@@ -2,14 +2,12 @@
 @use '../../helpers' as *;
 
 .wrap {
-    .box {
-        background: salmon;
-        &:nth-child(1) {
-            background: red;
-        }
-        @include mx-laptop {
-            font-family: $notosansKR;
-            font-size: 20px;
+    main {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(1fr, 365px));
+        grid-template-rows: repeat(3, minmax(1fr, 250px));
+        .box {
+            
         }
     }
 }
