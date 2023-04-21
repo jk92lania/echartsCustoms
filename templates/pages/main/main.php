@@ -8,7 +8,9 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/echartsCustoms/templates/include/common
 <body>
     <div class="wrap base_layout">
         <header>
-
+            <nav>
+                
+            </nav>
         </header>
         <aside class="leftSNB">
 
