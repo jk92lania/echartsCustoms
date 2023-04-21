@@ -1,0 +1,60 @@
+// 공통 묶음 스타일 => mixin
+
+@use 'variable' as *;
+
+@mixin mobile {
+    @media (max-width: $verSize1) {
+        @content;
+    }
+}
+
+@mixin pad {
+    @media (max-width: $verSize2) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (max-width: $verSize3) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width: $verSize4) {
+        @content;
+    }
+}
+
+// 라운드된 네모
+@mixin square_wrap(
+    $radius: null,
+    $border_width: 0,
+    $border_color: #000,
+    $fill_color: null,
+    $font_color: #000
+) {
+    border-radius: $radius;
+    border: $border_width solid $border_color;
+    background-color: $fill_color;
+    color: $font_color;
+}
+
+
+// flex 한가운데 정렬
+@mixin flex_all_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// input 기본 스타일 초기화, 다른 스타일 입히기 쉽게
+@mixin input_clear_style() {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    border: none;
+    background: transparent;
+}
